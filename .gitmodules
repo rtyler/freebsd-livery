@@ -1,0 +1,3 @@
+[submodule "modules/pkgng"]
+	path = modules/pkgng
+	url = git://github.com/xaque208/puppet-pkgng.git
