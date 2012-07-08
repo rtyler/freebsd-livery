@@ -8,5 +8,6 @@ Blimpy.fleet do |fleet|
     ship.username = 'root'
     ship.ports = [22, 8080]
     ship.flavor = 'm1.large'
+    ship.livery = :cwd
   end
 end
