@@ -13,6 +13,8 @@ if [ $? -ne 0 ]; then
   pkg install -y pkg
   # Install rsync(1) so we don't have to fall back to tar(1)+scp(1) ever again
   pkg install -y rsync
+  # Install puppet so we can get that up and running
+  pkg install -y puppet
 fi
 
-pkg help
+puppet apply --modulepath=./modules --verbose manifests/site.pp
