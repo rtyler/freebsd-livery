@@ -3,7 +3,10 @@
 
 Blimpy.fleet do |fleet|
   fleet.add(:aws) do |ship|
-    ship.name = 'Excelsior'
+    ship.image_id = 'ami-cab73afa'
+    ship.name = 'ngrepo'
+    ship.username = 'root'
     ship.ports = [22, 8080]
+    ship.flavor = 'm1.large'
   end
 end
